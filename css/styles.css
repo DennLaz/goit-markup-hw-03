@@ -1,0 +1,227 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --special-text-color: #2196f3;
+  --bg-color: #ffffff;
+  --grey-color: #f5f4fa;
+  --footer-color: rgba(255, 255, 255, 0.6);
+  --logo-color: #000000;
+  --bg-footer-color: #2f303a;
+}
+
+/* основной цвет заглавного текста текста #212121 */
+/* основной текст #757575*/
+/* Цвет лого, кнопки, ссылки #2196F3 */
+/* Белый цвет #FFFFFF */
+/*Белый цвет 60% прозрачноснти rgba(255, 255, 255, 0.6) */
+/* Вторичный цвет фона #F5F4FA  */
+body {
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Логотип */
+.logo {
+  color: var(--logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+span {
+  color: var(--special-text-color);
+}
+
+/* cтили для index.html */
+
+/* навигация */
+.nav-link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--special-text-color);
+}
+
+.nav-link.current {
+  color: var(--special-text-color);
+}
+
+/* Контакты */
+.contacts-list {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contacts-list:focus,
+.contacts-list:hover {
+  color: var(--special-text-color);
+}
+
+/* hero */
+.hero {
+  text-align: center;
+}
+
+/* Герой  */
+.hero-title {
+  color: var(--bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+/* button hero*/
+.hero-button {
+  background-color: var(--special-text-color);
+  color: var(--bg-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  align-items: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.section-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.section-subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-position {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* fotter and our team*/
+.bg-color {
+  background-color: var(--bg-footer-color);
+}
+.bg-team {
+  background-color: var(--grey-color);
+}
+
+.address-link {
+  color: var(--bg-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-contact {
+  color: var(--footer-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--special-text-color);
+}
+
+.address-contact:hover,
+.address-contact:focus {
+  color: var(--special-text-color);
+}
+
+/* Стили для portfolio.html */
+
+/* portfolio text pages */
+
+.items-links {
+  text-decoration: none;
+}
+
+.items-text {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+.items-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+/* portfolio button  */
+.work-button {
+  background-color: var(--grey-color);
+  color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.work-button:focus,
+.work-button:hover {
+  background-color: var(--special-text-color);
+  color: var(--bg-color);
+}
+
+/* portfolio logo */
+.logo-footer {
+  color: var(--bg-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
