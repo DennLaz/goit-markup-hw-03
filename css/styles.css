@@ -23,6 +23,8 @@ body {
 }
 
 .list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -76,6 +78,13 @@ span {
   color: var(--special-text-color);
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 /* hero */
 .hero {
   text-align: center;
@@ -83,6 +92,8 @@ span {
 
 /* Герой  */
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--bg-color);
   font-weight: 900;
   font-size: 44px;
@@ -100,8 +111,7 @@ span {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  align-items: center;
+  border-radius: 4px;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -130,11 +140,13 @@ span {
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .section-text {
   font-size: 14px;
   line-height: 1.7;
+  margin-top: 0;
 }
 
 .section-position {
@@ -145,6 +157,7 @@ span {
 /* fotter and our team*/
 .bg-color {
   background-color: var(--bg-footer-color);
+  margin-bottom: 94px;
 }
 .bg-team {
   background-color: var(--grey-color);
@@ -208,6 +221,7 @@ span {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .work-button:focus,
