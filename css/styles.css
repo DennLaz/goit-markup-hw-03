@@ -28,6 +28,14 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid teal;
+}
+
 /* Логотип */
 .logo {
   color: var(--logo-color);
@@ -36,6 +44,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   text-decoration: none;
+  margin-right: 93px;
 }
 
 span {
@@ -45,7 +54,20 @@ span {
 /* cтили для index.html */
 
 /* навигация */
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -64,7 +86,21 @@ span {
 }
 
 /* Контакты */
+
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contacts-list {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -78,16 +114,11 @@ span {
   color: var(--special-text-color);
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 /* hero */
 .hero {
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 /* Герой  */
@@ -112,11 +143,25 @@ span {
   font-size: 16px;
   line-height: 1.88;
   border-radius: 4px;
+  border-width: 0;
   letter-spacing: 0.06em;
   cursor: pointer;
+  padding: 10px 32px;
 }
 
 /* section */
+
+.section-items {
+  display: flex;
+  margin-top: 94px;
+  margin-right: 215px;
+  /* margin: 94px 215px; */
+}
+
+/* .section-desc {
+  justify-content: space-between;
+} */
+
 .section-title {
   color: var(--title-text-color);
   font-weight: 700;
@@ -124,6 +169,8 @@ span {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .section-name {
@@ -141,24 +188,27 @@ span {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 0;
 }
 
 .section-text {
   font-size: 14px;
   line-height: 1.7;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-position {
   font-size: 16px;
   line-height: 1.9;
+  margin-bottom: 0;
 }
 
 /* fotter and our team*/
 .bg-color {
   background-color: var(--bg-footer-color);
-  margin-bottom: 94px;
 }
+
 .bg-team {
   background-color: var(--grey-color);
 }
@@ -201,6 +251,7 @@ span {
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
+  margin-bottom: 0;
 }
 
 .items-title {
@@ -209,6 +260,11 @@ span {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.work-filter {
+  display: flex;
+  justify-content: center;
 }
 
 /* portfolio button  */
@@ -222,6 +278,12 @@ span {
   letter-spacing: 0.03em;
   cursor: pointer;
   border-radius: 4px;
+  border-width: 0;
+  padding: 6px 22px;
+}
+
+.filters:not(:last-child) {
+  margin-right: 8px;
 }
 
 .work-button:focus,
