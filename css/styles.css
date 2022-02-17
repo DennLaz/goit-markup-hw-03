@@ -36,6 +36,10 @@ body {
   padding-right: 15px;
 }
 
+.line {
+  border-bottom: 1px solid #ececec;
+}
+
 /* Логотип */
 .logo {
   color: var(--logo-color);
@@ -299,6 +303,14 @@ span {
   flex-wrap: wrap;
 }
 
+.items-links {
+  text-decoration: none;
+}
+
+.items-img {
+  display: block;
+}
+
 .items-desc {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
@@ -313,12 +325,11 @@ span {
   margin-right: 0;
 }
 
-.items-links {
-  text-decoration: none;
-}
-
 .items-elements {
   padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .items-text {
