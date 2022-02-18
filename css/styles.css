@@ -20,7 +20,6 @@ body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  width: 1600px;
 }
 
 .list {
@@ -58,6 +57,10 @@ span {
 /* cтили для index.html */
 
 /* навигация */
+
+.header .container {
+  display: flex;
+}
 
 .nav {
   display: flex;
@@ -102,6 +105,7 @@ span {
 
 .contacts-list {
   display: block;
+  margin-left: auto;
   padding-top: 32px;
   padding-bottom: 32px;
   display: flex;
@@ -126,8 +130,15 @@ span {
 }
 
 /* Герой  */
+
+.color-hero {
+  background-color: var(--bg-footer-color);
+  padding: 200px 0;
+}
+
 .hero-title {
-  margin-top: 0;
+  width: 696px;
+  margin: auto;
   margin-bottom: 30px;
   color: var(--bg-color);
   font-weight: 900;
@@ -186,6 +197,10 @@ span {
   margin-right: 30px;
 }
 
+.section-img {
+  display: block;
+}
+
 .work-job {
   padding-top: 94px;
   padding-bottom: 85px;
@@ -221,6 +236,8 @@ span {
 
 .box {
   padding: 30px 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .section-subtitle {
@@ -242,14 +259,40 @@ span {
 }
 
 /* fotter and our team*/
-.bg-color {
-  background-color: var(--bg-footer-color);
-  padding: 60px 0;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .bg-team {
   background-color: var(--grey-color);
   padding: 94px 0;
+}
+
+/* Оформление Футера */
+
+.bg-color {
+  background-color: var(--bg-footer-color);
+  padding: 60px 0;
+}
+
+.logo-footer {
+  color: var(--bg-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
 }
 
 .address {
@@ -288,8 +331,6 @@ span {
 }
 
 /* Стили для portfolio.html */
-
-/* portfolio text pages */
 
 /* флекс портфолио */
 
@@ -352,7 +393,7 @@ span {
 .work-filter {
   display: flex;
   justify-content: center;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 /* portfolio button  */
@@ -381,11 +422,3 @@ span {
 }
 
 /* portfolio logo */
-.logo-footer {
-  color: var(--bg-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
-}
